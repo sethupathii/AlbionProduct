@@ -5,6 +5,12 @@ import Link from 'next/link';
 export default async function UsersPage() {
   const properties = await GetUsers();
   console.log("The Data is", properties);
+
+  function getRandomNumber(){
+    return Math.random(6)
+  }
+
+
   return (
     <div>
       <h1>Properties</h1>
@@ -12,7 +18,7 @@ export default async function UsersPage() {
         return (
           <>
             <p>
-              <Link href={`/users/${Data.puid}`}>
+              <Link href={`/users/${Data.puid}?url=${getRandomNumber()}`}>
                 {Data.puid}
               </Link>
 

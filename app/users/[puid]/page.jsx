@@ -1,8 +1,7 @@
-// pages/[puid].jsx
+// // pages/[puid].jsx
 
 'use client'
 
-import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import GetUsers from '@/app/libs/getUsers';
 
@@ -43,3 +42,4 @@ export default function PropertyPage({ params: { id } }) {
         </div>
     );
 }
+
