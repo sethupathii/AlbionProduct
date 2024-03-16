@@ -2,6 +2,11 @@ import React from 'react'
 import GetUsers from '../libs/getUsers'
 import Link from 'next/link';
 
+export const metadata={
+  title:"Users Product",
+  description:"product",
+}
+
 export default async function UsersPage() {
   const properties = await GetUsers();
   console.log("The Data is", properties);
