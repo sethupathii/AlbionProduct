@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata = {
   title: 'Users',
   description: 'Generated Data',
-  imageUrl: './public/Assets/Reflect.jpg',
+  imageUrl: ' /Assets/Reflect.jpg',
 }
 
 export default function RootLayout({ children, header, footer }) {
